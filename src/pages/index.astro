@@ -4,11 +4,12 @@ import Card from "../components/Card.astro";
 ---
 
 <Layout>
-	<main class="w-[90%] h-[90%] border-primary border-4 font-sans">
+	<main class="w-[90%] h-[90%] border-primary border-4 font-sans relative">
+		<img class="absolute " src="/polygons/circle.svg" alt="Circle" />
 		<header class="flex justify-around">
-			<section class="w-1/2">
-				<h1 class="text-5xl font-normal">Gerard Costa</h1>
-				<h1 class="text-5xl font-semibold">Full Stack developer</h1>
+			<section class="w-1/2 flex flex-col m-8">
+				<h1 class="text-5xl">Gerard Costa</h1>
+				<h1 class="text-5xl font-medium">Full Stack developer</h1>
 			</section>
 			<section class="w-1/2 flex justify-end items-center gap-2">
 				<h1>About me</h1>

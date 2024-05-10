@@ -1,4 +1,7 @@
+import defaultTheme from 'tailwindcss/defaultTheme'
+
 /** @type {import('tailwindcss').Config} */
+
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
@@ -7,7 +10,11 @@ export default {
 			"primary": "#282726",
 			"secondary": "#DB4A2B",
 		},
-		extend: {},
+		extend: {
+			fontFamily: {
+				sans: ['PPNeue', ...defaultTheme.fontFamily.sans],
+			},
+		},
 	},
 	plugins: [],
 }
