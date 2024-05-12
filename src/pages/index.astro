@@ -1,21 +1,27 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import ThemeIcon from "../components/ThemeIcon.astro";
 ---
 
 <Layout>
-	<main class="w-[90%] h-[90%] border-primary border-4 font-sans relative">
-		<img class="absolute " src="/polygons/circle.svg" alt="Circle" />
-		<header class="flex justify-around">
-			<section class="w-1/2 flex flex-col m-8">
-				<h1 class="text-5xl">Gerard Costa</h1>
-				<h1 class="text-5xl font-medium">Full Stack developer</h1>
-			</section>
-			<section class="w-1/2 flex justify-end items-center gap-2">
-				<h1>About me</h1>
-				<h1>Projects</h1>
-				<h1>Contact</h1>
-			</section>
+	<main class="w-full h-screen">
+		<!-- <ThemeIcon /> -->
+		<header
+			class=" h-[100dvh] text-[128px] flex flex-col justify-center text-primary dark:text-primary-dark w-fit m-auto"
+		>
+			<h1 class="leading-[9rem]">Hi! My name is</h1>
+			<h1 class="text-main text-[250px] leading-[12rem] font-medium">
+				Gerard Costa
+			</h1>
+			<h1 class="leading-[9rem]">
+				I'm a <span class="font-medium">Full Stack developer</span>
+			</h1>
+			<h1 class="leading-[9rem]">
+				and <span class="text-main font-medium">
+					(list of adjectives)
+				</span>
+			</h1>
 		</header>
 	</main>
 </Layout>

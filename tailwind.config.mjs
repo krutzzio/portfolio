@@ -4,11 +4,15 @@ import defaultTheme from 'tailwindcss/defaultTheme'
 
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+	darkMode: 'class',
 	theme: {
 		colors: {
-			"background": "#E4E2DD",
-			"primary": "#282726",
-			"secondary": "#DB4A2B",
+			"main": "#EB5E28",
+			"background": "#FFFCF2",
+			"background-dark": "#252422",
+			"primary": "#403D39",
+			"primary-dark": "#CCC5B9",
+
 		},
 		extend: {
 			fontFamily: {
