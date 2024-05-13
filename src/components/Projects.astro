@@ -1,0 +1,14 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import projects from "../projects.json";
+
+console.log(projects);
+---
+
+<section class="my-32">
+    <h1 class="text-[128px] font-medium">Projects</h1>
+    <main class="flex flex-col gap-20">
+        <ProjectCard />
+        <ProjectCard />
+    </main>
+</section>
