@@ -1,24 +1,19 @@
 ---
 import { Icon } from "astro-icon/components";
+
+const { project } = Astro.props;
+const { name, desc } = project;
 ---
 
 <article class="flex justify-between my-16 mx-4 relative">
     <!-- <Icon name="blobs/project1" class="absolute top-[-35rem] left-[-2rem] z-0" size={1550} /> -->
-    <img src="/icons/blobs/project1.svg" class="absolute top-[-2rem] w-[120%]" alt="">
-    
+
     <aside class="w-[35%] h-full flex flex-col justify-between z-10">
         <h1 class="text-6xl font-medium text-main mb-6">Project name</h1>
-        <p class="text-3xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, iste
-            doloribus. Tempore ipsum dicta ipsa est accusantium laudantium ad,
-            autem nulla dolor doloremque quasi obcaecati illo maxime veritatis
-            asperiores aliquam optio praesentium repellat rerum neque porro id.
-            Praesentium tempore nemo iste nobis corrupti, ea ut, cumque
-            provident esse quibusdam blanditiis.
-        </p>
+        <p class="text-3xl">{desc}</p>
     </aside>
     <img
-        class="w-[50%] h-full z-10"
+        class="w-[40%] h-full z-10"
         src="/images/gamba/Landing.png"
         alt="Gamba Landing"
     />
